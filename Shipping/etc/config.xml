@@ -6,7 +6,6 @@
             <brimar>
                 <active>0</active>
                 <title>Brimar Shipping</title>
-                <n>Brimar Shipping</n>
                 <sort_order>0</sort_order>
                 <model>Brimar\Shipping\Model\Carrier\Brimar</model>
                 <specificerrmsg>This shipping method is currently unavailable.</specificerrmsg>

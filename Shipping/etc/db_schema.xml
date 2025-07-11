@@ -2,7 +2,7 @@
 <schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
 	
 	<!-- Create custom table for shipping options -->
-	<table name="brimar_shipping_brimar_shipping_options" resource="default" engine="innodb" comment="brimar_shipping_brimar_shipping_options Table">
+	<table name="brimar_shipping_options" resource="default" engine="innodb" comment="brimar_shipping_options Table">
 		<column xsi:type="int" name="brimar_shipping_options_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Entity Id"/>
 		<constraint xsi:type="primary" referenceId="PRIMARY">
 			<column name="brimar_shipping_options_id"/>

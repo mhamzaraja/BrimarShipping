@@ -60,13 +60,13 @@ class DataProvider extends AbstractDataProvider
         foreach ($items as $model) {
             $this->loadedData[$model->getId()] = $model->getData();
         }
-        $data = $this->dataPersistor->get('brimar_shipping_brimar_shipping_options');
+        $data = $this->dataPersistor->get('brimar_shipping_options');
         
         if (!empty($data)) {
             $model = $this->collection->getNewEmptyItem();
             $model->setData($data);
             $this->loadedData[$model->getId()] = $model->getData();
-            $this->dataPersistor->clear('brimar_shipping_brimar_shipping_options');
+            $this->dataPersistor->clear('brimar_shipping_options');
         }
         
         return $this->loadedData;

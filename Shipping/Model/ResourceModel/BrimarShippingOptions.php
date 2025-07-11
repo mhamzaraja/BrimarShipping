@@ -13,7 +13,7 @@ class BrimarShippingOptions extends AbstractDb
      */
     protected function _construct()
     {
-        $this->_init('brimar_shipping_brimar_shipping_options', 'brimar_shipping_options_id');
+        $this->_init('brimar_shipping_options', 'brimar_shipping_options_id');
     }
 }
 

@@ -19,14 +19,6 @@
                     </depends>
                 </field>
                 
-                <field id="name" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Method Name</label>
-                    <comment>This is the method name shown to customers</comment>
-                    <depends>
-                        <field id="active">1</field>
-                    </depends>
-                </field>
-                
                 <field id="specificerrmsg" translate="label" type="textarea" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Displayed Error Message</label>
                     <comment>Message shown when shipping method is not available</comment>
@@ -73,10 +65,8 @@
                     <label>Shipping Options Management</label>
                     <comment><![CDATA[
                         <strong>How to manage shipping options:</strong><br/>
-                        1. Go to <strong>Sales → Brimar Shipping Options</strong> to add/edit shipping options<br/>
-                        2. Each option can have its own price (e.g., Residential Delivery: PKR 5.00)<br/>
-                        3. Customers can select multiple options during checkout<br/>
-                        4. Only selected option prices are added to the total (no base shipping fee)
+                            Go to <strong>Sales → Brimar Shipping Options</strong> to Add/Edit and Delete shipping options<br/>
+
                     ]]></comment>
                     <depends>
                         <field id="active">1</field>

@@ -5,7 +5,7 @@
 	<preference for="Brimar\Shipping\Api\Data\BrimarShippingOptionsSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
 	<virtualType name="Brimar\Shipping\Model\ResourceModel\BrimarShippingOptions\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
 		<arguments>
-			<argument name="mainTable" xsi:type="string">brimar_shipping_brimar_shipping_options</argument>
+			<argument name="mainTable" xsi:type="string">brimar_shipping_options</argument>
 			<argument name="resourceModel" xsi:type="string">Brimar\Shipping\Model\ResourceModel\BrimarShippingOptions\Collection</argument>
 		</arguments>
 	</virtualType>

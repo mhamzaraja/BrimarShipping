@@ -48,7 +48,7 @@ class Edit extends \Brimar\Shipping\Controller\Adminhtml\Brimarshippingoptions
                 return $resultRedirect->setPath('*/*/');
             }
         }
-        $this->_coreRegistry->register('brimar_shipping_brimar_shipping_options', $model);
+        $this->_coreRegistry->register('brimar_shipping_options', $model);
         
         // 3. Build edit form
         /** @var \Magento\Backend\Model\View\Result\Page $resultPage */

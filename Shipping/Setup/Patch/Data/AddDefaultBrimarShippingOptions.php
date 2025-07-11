@@ -82,10 +82,7 @@ class AddDefaultBrimarShippingOptions implements DataPatchInterface
 
     public static function getDependencies(): array
     {
-        return [
-            // Add any schema patches this depends on
-            // \Brimar\Shipping\Setup\Patch\Schema\CreateBrimarShippingOptionsTable::class
-        ];
+        return [];
     }
 
     public function getAliases(): array
