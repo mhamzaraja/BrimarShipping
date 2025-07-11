@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Brimar_Shipping::brimar_shipping_options" 
+             title="Brimar Shipping Options" 
+             module="Brimar_Shipping" 
+             sortOrder="40" 
+             parent="Magento_Sales::sales_operation" 
+             action="brimar_shipping/actions/index" 
+             resource="Brimar_Shipping::shipping_options" />
+    </menu>
+</config>

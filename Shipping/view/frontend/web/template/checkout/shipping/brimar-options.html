@@ -1,0 +1,37 @@
+<div class="brimar-shipping-options" data-bind="visible: isVisible">
+    <div class="shipping-options-container">
+        
+        <!-- ko if: isLoading() -->
+        <div class="loading-options">
+            <span>Loading shipping options...</span>
+        </div>
+        <!-- /ko -->
+        
+        <!-- ko if: !isLoading() && availableOptions().length > 0 -->
+        <div class="options-list">
+            <!-- ko foreach: availableOptions -->
+            <div class="shipping-option-item">
+                <label class="shipping-option-label">
+                    <input type="radio" 
+                           name="brimar_shipping_option"
+                           class="shipping-option-radio"
+                           data-bind="attr: {value: code}, 
+                                      checked: $parent.selectedOption,
+                                      click: $parent.onOptionChange.bind($parent, $data)" />
+                    <span class="option-content">
+                        <span class="option-name" data-bind="text: label"></span>
+                        <span class="option-price" data-bind="text: $parent.getFormattedPrice(price)"></span>
+                    </span>
+                </label>
+            </div>
+            <!-- /ko -->
+        </div>
+        <!-- /ko -->
+        
+        <!-- ko if: !isLoading() && availableOptions().length === 0 -->
+        <div class="no-options-message">
+            <p>No additional shipping options available.</p>
+        </div>
+        <!-- /ko -->
+    </div>
+</div>
