@@ -1,16 +1,29 @@
 {
-    "name": "brimar/module-shipping",
-    "description": "Brimar shipping method ",
+    "name": "brimar/shipping",
+    "description": "Brimar Custom Shipping Options Module for Magento 2",
     "type": "magento2-module",
-    "license": "GPL-3.0",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
     "authors": [
         {
-            "name": "Mage2Gen",
-            "email": "info@mage2gen.com"
+            "name": "Muhammad Hamza Khan",
+            "email": "mhamzak3@gmailcom"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {},
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.4",
+        "magento/framework": ">=103.0",
+        "magento/module-backend": ">=102.0",
+        "magento/module-checkout": ">=100.4",
+        "magento/module-quote": ">=101.1",
+        "magento/module-sales": ">=103.0",
+        "magento/module-shipping": ">=100.4",
+        "magento/module-ui": ">=101.2"
+    },
     "autoload": {
         "files": [
             "registration.php"
@@ -18,5 +31,13 @@
         "psr-4": {
             "Brimar\\Shipping\\": ""
         }
+    },
+    "extra": {
+        "map": [
+            [
+                "*",
+                "Brimar/Shipping"
+            ]
+        ]
     }
 }

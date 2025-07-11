@@ -52,3 +52,6 @@ tr.row:has(#label_carrier_brimar_brimar) td.col.col-method{
     display: none;
 }
 
+table.table-checkout-shipping-method tr.row:not(:has(+ .brimar-options-row)){
+    margin-bottom: 10px;
+}
